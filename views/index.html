@@ -2,56 +2,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Dummy Bank</title>
-        <link rel="stylesheet" href="/static/stylesheets/main.css">
+        <title>WebEng Second Long Exam</title>
+        <link rel="stylesheet" href="/static/styles.css">
     </head>
 
+    <body id="index">
+        <h1>WebEng Second Long Exam</h1>
 
-    <body>
-<header>
-  <h1>Welcome to Dummy Bank!</h1>
-</header>
-<div class="user-card round5">
-    <div class="login-box">
-        <h4><center>Sign In</center></h4>
-        <h4><center>{{ messages.signInMessage }}<center></h4>       
-        <h4><center>{{ messages.signUpMessage }}<center></h4>                    
-        <form class="login-form" name="login" action="/signin" method="post">
-            <input type="text" placeholder="Email" name="email" id="email" />
-            <input type="password" placeholder="Password"  name="password" id="password" />
-            <input type="submit" name="login" value="Login" class="login" />
+        <form action="/submit" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <button>Submit</button>
         </form>
-        <div class="or"></div>
-
-        <a href="/auth/twitter" class="login-with-twitter">
-            Login with twitter
-        </a>
-        <a href="/auth/facebook" class="login-with-fb">
-            Login with facebook
-        </a>        
-        <!-- <a href="/auth/google" class="login-with-google">
-            Login with google
-        </a>       -->  
-        <div class="or"></div>
-    </div>
-    <div class="signup-box"> 
-        <h4><center>Sign Up</center></h4>    
-        <form class="signup-form" name="signup" action="/signup" method="post">
-            <input type="text" placeholder="Name" name="name" id="name"/>        
-            <input type="text" placeholder="Email" name="email" id="email"/>
-            <input type="password" placeholder="password" name="password" id="password"/>
-            <input type="password" placeholder="confirm password" name="confirmation" id="confirmation"/>
-            <input type="submit" name="signup" value="Signup" class="signup" />
-        </form>
-    </div>
-
-    <div class="footer">
-        <a href="#" class="toggle-link" > Signup </a>     
-    </div>
-</div>
-    
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-  <script src="/static/js/index.js"></script>
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-</body>
+    </body>
 </html>
