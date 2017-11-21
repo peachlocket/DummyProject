@@ -10,3 +10,11 @@ before_script: chmod 0777 ./node_modules/.bin/mocha
 
 script:
   - npm test
+
+notifications:
+  email:
+    recipients:
+      - mcvarona.cv@gmail.com
+      - mcvarona@up.edu.ph
+    on_success: always # default: change
+    on_failure: always # default: always
