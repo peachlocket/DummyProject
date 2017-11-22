@@ -16,5 +16,7 @@ notifications:
     recipients:
       - mcvarona.cv@gmail.com
       - mcvarona@up.edu.ph
+      - huchiu@up.edu.ph
+      - kamarinduque@up.edu.ph
     on_success: always # default: change
     on_failure: always # default: always
